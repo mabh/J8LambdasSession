@@ -39,16 +39,23 @@ public class E_StreamProcessing {
 		
 		
 		//total length another way by reducer
-		System.out.println(
+/*		System.out.println(
 				list.stream()
 					.mapToInt(s -> s.length())
 					.min()
 					.orElse(10)
 		);
-		
+*/		
 		
 		
 		//parallel streams
+		System.out.println(
+				list.parallelStream()
+					.mapToInt(s -> s.length())
+					.min()
+					.orElse(10)
+		);
+		
 		
 		
 		
